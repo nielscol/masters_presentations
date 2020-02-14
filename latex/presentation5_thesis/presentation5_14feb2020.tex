@@ -11,6 +11,7 @@
 \usepackage[normalem]{ulem}
 \usepackage{tikz}
 \usepackage{subcaption}
+\usepackage{hyperref}
 % Use the NTNU-temaet for beamer 
 % \usetheme[style=ntnu|simple|vertical|horizontal, 
 %     language=bm|nn|en, 
@@ -22,10 +23,10 @@
 \usepackage[style=numeric,backend=biber,natbib=false,sorting=none]{biblatex}
 
 \title[Short title]{Ultra low power integer-N ADPLL}
-\subtitle{Master's thesis project - meeting 4}
+\subtitle{Master's thesis project - meeting 5}
 \author[C Nielsen]{Cole Nielsen}
 \institute[NTNU]{Department of Electronic Systems, NTNU}
-\date{7 February 2020 (calendar week 6)}
+\date{14 February 2020 $\heartsuit$ (calendar week 7)}
 %\date{} % To have an empty date
 
 \addbibresource{example.bib} % Add bibliography database
@@ -63,12 +64,9 @@
 	\begin{block}{For this week...}
 		\begin{enumerate}[itemsep=4pt,label=\protect\mycirc{\arabic*}]
 			\scriptsize
-			\item Theory for optimal PLL using BB-PD.
-			\item Linear phase detector
-			\begin{itemize}[itemsep=4pt,label=\protect---]
-				\item Delay line methods waste of time, need calibration, complexity increases with resolution
-				\item Counter TDC is viable.
-			\end{itemize}
+			\item Some more with synchronous counter.
+			\item Bang bang phase detector.
+			\item New {\color{blue}\href{https://github.com/nielscol/thesis_presentations}{\underline{Github repo}}} for presentations.
 		\end{enumerate} 
 	\end{block}	
 \end{frame}
@@ -83,6 +81,111 @@
 % Physical limits
 % #############################################################################
 
+\begin{frame}
+	\frametitle{DFF Architectures}
+	\begin{block}{True single phase clock.}
+	\tiny
+	\begin{itemize}[itemsep=4pt,label=\protect---]
+		\item True single phase clock (TSPC) advantageous for low power.
+		\item If TSPC is too slow, enhanced TSPC (e-TSPC) is essentially the fastest possible DFF architecture in CMOS. However, power consumption is horrendous as it results in direct conduction paths from rail to rail on the order of 25\% of the time if used as BB-PD.
+
+	\end{itemize}
+	% \vspace{-3em}
+	\begin{figure}[htb!]
+	    \centering
+	    \begin{subfigure}{0.5\textwidth}
+	        \centering
+	        \includegraphics[width=0.8\textwidth, angle=0]{tspc_dff.pdf}
+	        \caption{TSPC DFF}
+	    \end{subfigure}%
+	    \begin{subfigure}{0.5\textwidth}
+	        \centering
+	        \center\includegraphics[width=0.8\textwidth, angle=0]{etspc_dff.pdf}
+	        \caption{e-TSPC DFF}
+	    \end{subfigure}
+	    % \caption{Approximate model for ring oscillator inverter delay cell.}
+	\end{figure}
+
+	\end{block}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Synchronous counter architecture}
+	\begin{block}{For real this time.}
+	\tiny
+	\begin{itemize}[itemsep=4pt,label=\protect---]
+		\item Only tested ripple (asynchronous) counter last time. 
+		\item Implement T flip-flop with XOR gate, AND carry logic. Logic implemented as NAND2 only, with all FETS 200nm/20nm. 
+		\item Necessary to ensure that incorrect value isn't sampled, which is possible with asynchronous during ripple period. Penalty: 50 NAND2 gates, all FF's must be clocked every input cycle, i.e. more power than async.
+	\end{itemize}
+	% \vspace{-3em}
+	\begin{figure}[htb!]
+	        \centering
+	        \includegraphics[width=1\textwidth, angle=0]{sync_counter.pdf}
+	    % \caption{Approximate model for ring oscillator inverter delay cell.}
+	\end{figure}
+
+	\end{block}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{8 bit ripple async. counter power}
+	\begin{block}{Power consumption under swept conditions.}
+	\tiny
+	\begin{itemize}[itemsep=4pt,label=\protect---]
+		\item Chain of 8 DFFs whose output clocks the next respective FF in the chain.
+		\item Tested (W/L) = \{100n/20, 200n/20\}, $C_{min}$ = \{10, 100\} aF, V$_{dd} \in [0.3, 0.8]$ V. 
+		\item TSPC has favorable power consumption. e-TSPC is terrible on the other hand, but is less sensitive to loading.
+
+	\end{itemize}
+	% \vspace{-3em}
+	\begin{figure}[htb!]
+	    \centering
+	    \begin{subfigure}{0.5\textwidth}
+	        \centering
+	        \includegraphics[width=1\textwidth, angle=0]{tspc_counter_power.pdf}
+	    \end{subfigure}%
+	    \begin{subfigure}{0.5\textwidth}
+	        \centering
+	        \center\includegraphics[width=1.0\textwidth, angle=0]{etspc_counter_power.pdf}
+	    \end{subfigure}
+	    % \caption{Approximate model for ring oscillator inverter delay cell.}
+	\end{figure}
+
+	\end{block}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{8 bit synchronous counter power}
+	\begin{block}{Power consumption under swept conditions.}
+	\tiny
+	\begin{itemize}[itemsep=4pt,label=\protect---]
+		\item Tested (W/L) = \{100n/20, 200n/20\}, $C_{min}$ = \{10, 100\} aF, V$_{dd} \in [0.3, 0.8]$ V. 
+		\item Minimizing capacitance is most favorable for power. However, it is expected that 50 $\mu$W of counter power will only increase average power by $<< 1 \mu$W. So all circumstance tested here appear acceptable.
+	\end{itemize}
+	% \vspace{-3em}
+	\begin{figure}[htb!]
+	        \centering
+	        \includegraphics[width=0.5\textwidth, angle=0]{tspc_sync_counter_power.pdf}
+	    % \caption{Approximate model for ring oscillator inverter delay cell.}
+	\end{figure}
+
+	\end{block}	
+\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Synchronous counter output}
+	\begin{block}{800 mV Vdd}
+	\tiny
+	All edges occur within a time interval of 80ps. 54 $\mu$W power with 100 aF $C_{min}$
+	\begin{figure}[htb!]
+
+	        \center\includegraphics[width=0.9\textwidth, angle=0]{sync_counter_timing.png}
+	\end{figure}
+	\end{block}	
+\end{frame}
 
 \begin{frame}
 	\frametitle{Noisy BB-PD Model.}
@@ -101,7 +204,72 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Noisy BB-PD Model.}
+	\frametitle{Simulation of BB-PD.}
+	\begin{block}{Simulation with TSPC DFF - Output expectation vs input delta.}
+	\tiny
+	\begin{itemize}[itemsep=4pt,label=\protect---]
+		\item Utilized TSPC DFF, with inverter buffers (FETs sized 200n/20n) for clock and data buffers.
+		\item Sweep delay between inputs, calculating the expect value of the output for 100 bits. Transient noise simulated (up to 100 GHz), and the inital state of the FF is set to be high 50x and low 50x to include hysteresis effects. 
+		\item V$_{DD} \in$ \{0.5, 0.8\} V and (W/L) $\in$ \{100n/20n, 200n/20n\} tested. 100 aF added to every node.
+		\item \textbf{Resulting CDFs of the input time delta versus output expectation are below.}
+	\end{itemize}
+	\vspace{-2em}
+	\begin{figure}[htb!]
+	    \centering
+		\includegraphics[width=1\textwidth, angle=0]{cdfs.pdf}
+	\end{figure}
+	\end{block}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Simulation of BB-PD.}
+	\begin{block}{Simulation with TSPC DFF - Jitter distributions.}
+	\tiny
+	\begin{itemize}[itemsep=4pt,label=\protect---]
+		\item Jitter PDFs are bimodal from hysteresis of DFF. 
+		\item Increasing (W/L) or $V_{DD}$ both impact jitter favorably.
+		\item \textbf{The jitter PDF (computed from the CDFs) of the input time delta versus output expectation are below. (Delays are removed)}
+	\end{itemize}
+	\vspace{-2em}
+	\begin{figure}[htb!]
+	    \centering
+		\includegraphics[width=0.7\textwidth, angle=0]{jitter_pdfs.pdf}
+	\end{figure}
+	\end{block}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Simulation of BB-PD.}
+	\begin{block}{Tabularized results.}
+		\tiny
+		Requirements were $<$ 10 $\mu$W for the BB-PD, and its RMS jitter to be <12 ps for 17 dB CNR or < 8 ps for 20 dB CNR.
+		\begin{table}[h!]
+			\centering
+			\def\arraystretch{1.5}		
+			\setlength\arrayrulewidth{0.75pt}
+			\setlength{\tabcolsep}{1em} % for the horizontal padding
+			\begin{tabular}{|c|c|c|c|c|c|c|}
+				\hline 
+				\rule[-1ex]{0pt}{2.5ex} \cellcolor{gray!40}\textbf{(W/L)} & \cellcolor{gray!40}\textbf{Supply [V]} & \cellcolor{gray!40}\textbf{RMS jitter [ps]}& \cellcolor{gray!40}\textbf{Delay [ps]} & \cellcolor{gray!40}\textbf{DFF [$\mu$W]} & \cellcolor{gray!40}\textbf{Buffer [$\mu$W]} & \cellcolor{gray!40}\textbf{Total Power [$\mu$W]}\\ 
+				\hline 
+				\rule[-1ex]{0pt}{2.5ex} 100n/20n  & 0.5 & 6.01 & 13.3 & 1.64 & 1.595 & 3.236 \\ 
+				\hline 
+				\rule[-1ex]{0pt}{2.5ex} 100n/20n  & 0.8 & 0.832 & 4.99 & 3.942 & 4.195 & 8.136 \\ 
+				\hline 
+				\rule[-1ex]{0pt}{2.5ex} 200n/20n  & 0.5 & 1.776 & 2.73 & 2.215 & 1.81 & 4.025 \\ 
+				\hline 
+				\rule[-1ex]{0pt}{2.5ex} 200n/20n  & 0.8 & 0.496 & 2.072 & 4.591 & 4.518 & 9.109 \\ 
+				\hline 
+			\end{tabular} 
+			% \caption{Assigned specifications for branch line hybrid design.}
+			% \label{asgn_specs}
+		\end{table}   
+		{\color{red}\textbf{All four scenarios tested here pass the requirements.}} This will have to be re-evaluated post layout and with supply noise, however.
+	\end{block}    
+\end{frame}
+
+\begin{frame}
+	\frametitle{Noisy BB-PD Model. \color{red}RECAP}
 	\begin{block}{Linearized noisy BB-PD model.}
 	\tiny
 	\begin{figure}[htb!]
@@ -125,7 +293,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Noisy BB-PD Model.}
+	\frametitle{Noisy BB-PD Model. \color{red}RECAP}
 	\begin{block}{Linearized noisy BB-PD model (continued).}
 	\tiny
 	\begin{figure}[htb!]
@@ -148,7 +316,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{BB-PD PLL Optimization.}
+	\frametitle{BB-PD PLL Optimization. \color{red}RECAP}
 	\begin{block}{Approximate model for phase noise and optimal bandwidth.}
 	\tiny
 	\begin{itemize}[itemsep=4pt,label=\protect---]
@@ -181,7 +349,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{BB-PD PLL Optimization.}
+	\frametitle{BB-PD PLL Optimization. \color{red}RECAP}
 	\begin{block}{BB-PD Jitter constraint with fixed BW and f$_{ref}$ relationship.}
 	\tiny
 	\begin{itemize}[itemsep=4pt,label=\protect---]
@@ -212,7 +380,7 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{BB-PD PLL Optimization.}
+	\frametitle{BB-PD PLL Optimization.  \color{red}RECAP}
 	\begin{block}{Optimal parameter selection.}
 	\tiny
 	\begin{itemize}[itemsep=4pt,label=\protect---]
@@ -237,180 +405,6 @@
 	\end{block}	
 \end{frame}
 
-\begin{frame}
-	\frametitle{TDC implementation}
-	\begin{block}{Architectures}
-		\begin{itemize}[itemsep=4pt,label=\protect---]
-			\scriptsize
-			\item Two choices for coarse linear phase detector, delay line TDC or synchronous counter.
-
-				\scriptsize
-				\item \textbf{Coarse delay line TDC}
-				\begin{itemize}
-					\scriptsize
-					\item {\color{red}\textbf{(-)}} Complexity grows as $\mathcal{O}(n)$.
-					\item {\color{red}\textbf{(-)}} Requires calibration of delay cells (possibly slow).
-					\item {\color{red}\textbf{(-)}} Linearity issues, with poor calibration, gain accuracy is a problem.
-					\item {\color{red}\textbf{(-)}} Needs divider.
-				\end{itemize}
-
-				\item \textbf{Synchronous counter}
-				\begin{itemize}
-					\scriptsize
-					\item {\color{teal}\textbf{(+)}} Complexity grows as $\mathcal{O}(log(n))$.
-					\item {\color{teal}\textbf{(+)}} No calibration, no linearity issues.
-					\item {\color{teal}\textbf{(+)}} Divider not needed (reduces noise, power?).
-					\item {\color{red}\textbf{(-)}} High power, must run as oscillator frequency.
-					\item {\color{red}\textbf{(-)}} Resolution limited be to equal to divider modulus.
-				\end{itemize}
-			\item Counter approach has \textit{significant} advantages for PLL start up. Will switch of counter after initial lock to save power.
-		\end{itemize} 	
-	\end{block}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Digital TDC}
-	\begin{block}{Coarse Delay line (BAD)}
-			\vspace{-0.5em}
-			\center\includegraphics[width=0.5\textwidth, angle=0]{tdc_cal.pdf}	
-		\begin{itemize}[itemsep=4pt,label=\protect---]
-			\scriptsize
-			\item Standard N-stage inverter-based delay line.
-			\item Complexity is problematic, $\mathcal{O}$(n).
-			\item Use mux to allow for delay line to operate as ring oscillator for calibration.
-			\item Over N reference cycles in ring oscillator mode, a delta in the output word of $\Delta$TDC corresponds to the following gain accuracy of the TDC (use to calibrate):
-			\tiny
-			\begin{equation}
-				\frac{\Delta t_{line}}{T_{ref}} = \frac{\Delta TDC(N_{CYCLES})}{M\cdot N_{CYCLES}}
-			\end{equation}
-			\scriptsize	
-		\end{itemize}
-
-	\end{block}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Flip flop for counter schematic}
-	\begin{block}{True single phase circuits}
-	\tiny
-	\begin{itemize}[itemsep=4pt,label=\protect---]
-		\item I have implemented the divider using enhanced true single phase clock circuit (E-TSPC) DFFs. These are preferred in PLLs as they provide good energy-delay characteristics, but are not used in logic as the signal quality isn't perfect/limited retention time. 
-		\item These are implemented in minimum size for DFM ruleset (100nm/20nm) in SLVT. 
-		\item e-TSPC DFF is typically 6 transistors, I have added 1 transistor to implement asynchronous reset and one inverter to get an inverted output. 
-	\end{itemize}
-	\begin{figure}[htb!]
-	    \centering
-	    \begin{subfigure}{0.6\textwidth}
-	        \centering
-	        \center\includegraphics[width=1\textwidth, angle=0]{etspc_dff_schem.png}
-	    \end{subfigure}%
-	    \begin{subfigure}{0.5\textwidth}
-	        \centering
-	        \center\includegraphics[width=0.5\textwidth, angle=0]{etspc_dff_symbol.png}
-	    \end{subfigure}
-	    % \caption{Approximate model for ring oscillator inverter delay cell.}
-	\end{figure}
-	\end{block}	
-\end{frame}
-
-\begin{frame}
-	\frametitle{Synchronous counter schematic}
-	\begin{block}{Chained DFF's}
-	\tiny
-	\begin{itemize}[itemsep=4pt,label=\protect---]
-		\item I require an N=8 bit counter, so this is simply a chain of N e-TSPC DFFs with the output Q of a given stage clocking the next stage. The data input of each DFF is connected to the inverted output Qn so that the output toggles every clock edge.
-	\end{itemize}
-
-	\begin{figure}[htb!]
-
-	        \center\includegraphics[width=0.5\textwidth, angle=0]{sync_counter.png}
-	\end{figure}
-	\end{block}	
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Synchronous counter power}
-	\begin{block}{Sweeped Vdd}
-	\tiny
-	\begin{itemize}[itemsep=4pt,label=\protect---]
-		\item Power grows rapidly with Vdd. For < 50 $\mu$W, should keep Vdd < 430 mV.
-		\item Cmin = 10 aF.
-	\end{itemize}
-
-	\begin{figure}[htb!]
-
-	        \center\includegraphics[width=0.5\textwidth, angle=0]{count_power.png}
-	\end{figure}
-	\end{block}	
-\end{frame}
-
-\begin{frame}
-	\frametitle{Synchronous counter output}
-	\begin{block}{400 mV Vdd}
-	\tiny
-
-	\begin{figure}[htb!]
-
-	        \center\includegraphics[width=0.8\textwidth, angle=0]{count_out.png}
-	\end{figure}
-	\end{block}	
-\end{frame}
-
-\begin{frame}
-	\frametitle{Importance of counter power.}
-	\begin{block}{Monte-Carlo simulation of lock time.}
-	\tiny
-
-
-	\begin{itemize}[itemsep=4pt,label=\protect---]
-		\item Monte-Carlo simulation with 1000 samples, 20\% RMS deviation in K$_{\textnormal{DCO}}$, and 60 MHz (2.5\% of nominal) RMS deviation in initial frequency error. Gear switch used for fast locking. \textbf{Mean lock time of 6 $\mu$s. }
-		\item\textbf{High counter power consumption is not problematic}. If PLL on time = 256 $\mu$s, counter power is 5x the BB-PD, and the counter is disabled after gear 1 lock, averaged power increases only 9\% versus BB-PD alone (i.e. 10 $\mu$W $\rightarrow$ 11 $\mu$W).
-	\end{itemize}
-
-	\begin{figure}[htb!]
-	    \centering
-	    \begin{subfigure}{0.5\textwidth}
-	        \centering
-	        \center\includegraphics[width=1.0\textwidth, angle=0]{./figs/mc_trans_2x.pdf}
-	        \label{fig:mc_trans_fast}
-	    \end{subfigure}%
-	    \begin{subfigure}{0.5\textwidth}
-	        \centering
-	        \center\includegraphics[width=1.0\textwidth, angle=0]{figs/mc_hist_fast_2x.pdf}
-	        \label{fig:mc_hist_fast}
-	    \end{subfigure}
-	    % \caption{Approximate model for ring oscillator inverter delay cell.}
-	    \label{fig:mc_sim_fast}
-	\end{figure}
-	\end{block}	
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Wrapper for transistors?}
-	\begin{block}{Attempt...}
-	\tiny
-	\begin{itemize}[itemsep=4pt,label=\protect---]
-		\item Trond mentioned before that for a master's project, we should create a sort of wrapper for the transistors to improve portability.
-		\item Should this be fixed unit size device, or can I implement it with pass-through of parameters to the symbol from the technology library (as I have currently done)?
-		\item Also, I will use the 5/6 terminal devices in my schematics (with parasitic diodes for the wells).
-	\end{itemize}
-
-	\begin{figure}[htb!]
-	    \centering
-	    \begin{subfigure}{0.5\textwidth}
-	        \centering
-	        \center\includegraphics[width=0.9\textwidth, angle=0]{cmos_wrap_schem.png}
-	    \end{subfigure}%
-	    \begin{subfigure}{0.5\textwidth}
-	        \centering
-	        \center\includegraphics[width=0.9\textwidth, angle=0]{cmos_wrapper_sym.png}
-	    \end{subfigure}
-	    % \caption{Approximate model for ring oscillator inverter delay cell.}
-	\end{figure}
-	\end{block}	
-\end{frame}
 
 
 

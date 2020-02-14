@@ -1,0 +1,9 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'presentation5_14feb2020.blg'
+[22] biber:313> INFO - === fr. feb. 14, 2020, 10:02:52
+[39] Biber.pm:371> INFO - Reading 'presentation5_14feb2020.bcf'
+[84] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[89] Utils.pm:169> WARN - The file 'presentation5_14feb2020.bcf' does not contain any citations!
+[94] bbl.pm:617> INFO - Writing 'presentation5_14feb2020.bbl' with encoding 'UTF-8'
+[94] bbl.pm:720> INFO - Output to presentation5_14feb2020.bbl
+[94] Biber.pm:110> INFO - WARNINGS: 1

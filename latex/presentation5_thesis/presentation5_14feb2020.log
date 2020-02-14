@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.20)  7 FEB 2020 12:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.20)  14 FEB 2020 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**presentation4_7feb2020.tex
+**presentation5_14feb2020.tex
 
-(/home/cole/Documents/pll/presentations/latex/presentation4_thesis/presentation
-4_7feb2020.tex
+(/home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/prese
+ntation5_14feb2020.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1127,8 +1127,8 @@ Package caption Info: Hyperref support is turned off
 \c@subfigure=\count166
 \c@subtable=\count167
 )
-(/home/cole/Documents/pll/presentations/latex/presentation4_thesis/beamerthemen
-tnu2017.sty
+(/home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/beame
+rthementnu2017.sty
 Package: beamerthementnu2017 2017/05/31
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
@@ -1151,10 +1151,10 @@ Grid set 16 x 16 = 22.7622pt x 17.07166pt
 \TP@prevdepth=\dimen292
 TextBlockOrigin set to 0pt x 0pt
 )
-(/home/cole/Documents/pll/presentations/latex/presentation4_thesis/beamerinnert
-hementnu2017.sty
-(/home/cole/Documents/pll/presentations/latex/presentation4_thesis/beamerntnu20
-17common.sty
+(/home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/beame
+rinnerthementnu2017.sty
+(/home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/beame
+rntnu2017common.sty
 Package: beamerntnu2017common 
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -1340,10 +1340,11 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box79
 \rot@mess@toks=\toks57
 ))
-(/home/cole/Documents/pll/presentations/latex/presentation4_thesis/beameroutert
-hementnu2017.sty)
-(/home/cole/Documents/pll/presentations/latex/presentation4_thesis/beamercolort
-hementnu2017.sty)) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+(/home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/beame
+routerthementnu2017.sty)
+(/home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/beame
+rcolorthementnu2017.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/02/14 3.18 The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
@@ -1592,26 +1593,27 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 \@quotelevel=\count448
 \@quotereset=\count449
 
-(/home/cole/Documents/pll/presentations/latex/presentation4_thesis/presentation
-4_7feb2020.aux)
-\openout1 = `presentation4_7feb2020.aux'.
+(/home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/prese
+ntation5_14feb2020.aux)
+\openout1 = `presentation5_14feb2020.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 48.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 49.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 *geometry* driver: auto-detecting
@@ -1680,7 +1682,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box82
-Package hyperref Info: Link coloring OFF on input line 48.
+Package hyperref Info: Link coloring OFF on input line 49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1690,59 +1692,59 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count456
 )
-LaTeX Info: Redefining \ref on input line 48.
-LaTeX Info: Redefining \pageref on input line 48.
-LaTeX Info: Redefining \nameref on input line 48.
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
 
-(/home/cole/Documents/pll/presentations/latex/presentation4_thesis/presentation
-4_7feb2020.out)
-(/home/cole/Documents/pll/presentations/latex/presentation4_thesis/presentation
-4_7feb2020.out)
+(/home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/prese
+ntation5_14feb2020.out)
+(/home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/prese
+ntation5_14feb2020.out)
 \@outlinefile=\write7
-\openout7 = `presentation4_7feb2020.out'.
+\openout7 = `presentation5_14feb2020.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 48.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 49.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 48.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 49.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 48.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 48.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 49.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 48.
+(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 48.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 48.
+(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 49.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 48.
+(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 48.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 48.
+(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 49.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 48.
+(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 48.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 48.
+(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 49.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 48.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 48.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 49.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 48.
+(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 49.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 48.
+(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 48.
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/phv/bx/n --> T1/phv/bx/n on input line 48.
+(Font)                  T1/phv/bx/n --> T1/phv/bx/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 48.
+(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 48.
+(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 49.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 48.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 49.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1774,24 +1776,40 @@ Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout6 = `presentation4_7feb2020.bcf'.
+\openout6 = `presentation5_14feb2020.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'presentation4_7feb2020.bbl' found.
+Package biblatex Info: ... file 'presentation5_14feb2020.bbl' found.
 
-(/home/cole/Documents/pll/presentations/latex/presentation4_thesis/presentation
-4_7feb2020.bbl)
-Package biblatex Info: Reference section=0 on input line 48.
-Package biblatex Info: Reference segment=0 on input line 48.
+(/home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/prese
+ntation5_14feb2020.bbl)
+Package biblatex Info: Reference section=0 on input line 49.
+Package biblatex Info: Reference segment=0 on input line 49.
 
-(/home/cole/Documents/pll/presentations/latex/presentation4_thesis/presentation
-4_7feb2020.nav)
+(/home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/prese
+ntation5_14feb2020.nav)
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <6> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 48.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 52.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 53.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 53.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 53.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 53.
 
 Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [] 
@@ -1801,7 +1819,9 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 74.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 72.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 72.
 
 Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [] 
@@ -1810,28 +1830,16 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 101.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 101.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 101.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 101.
-<bbpd_jitter.pdf, id=26, 333.245pt x 243.91125pt>
-File: bbpd_jitter.pdf Graphic file (type pdf)
-<use bbpd_jitter.pdf>
-Package pdftex.def Info: bbpd_jitter.pdf  used on input line 101.
-(pdftex.def)             Requested size: 151.08315pt x 110.58156pt.
-
-Overfull \vbox (14.16377pt too high) detected at line 101
- []
-
+<tspc_dff.pdf, id=28, 266.9975pt x 159.59625pt>
+File: tspc_dff.pdf Graphic file (type pdf)
+<use tspc_dff.pdf>
+Package pdftex.def Info: tspc_dff.pdf  used on input line 110.
+(pdftex.def)             Requested size: 134.29755pt x 80.27765pt.
+<etspc_dff.pdf, id=29, 245.91875pt x 123.46124pt>
+File: etspc_dff.pdf Graphic file (type pdf)
+<use etspc_dff.pdf>
+Package pdftex.def Info: etspc_dff.pdf  used on input line 110.
+(pdftex.def)             Requested size: 134.29755pt x 67.42537pt.
 
 Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [] 
@@ -1839,17 +1847,14 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [3
 
- </home/cole/Documents/pll/presentations/latex/presentation4_thesis/bbpd_jitter
-.pdf>]
-<bbpd_noise_linearized.pdf, id=41, 489.83pt x 111.41624pt>
-File: bbpd_noise_linearized.pdf Graphic file (type pdf)
-<use bbpd_noise_linearized.pdf>
-Package pdftex.def Info: bbpd_noise_linearized.pdf  used on input line 125.
-(pdftex.def)             Requested size: 184.65947pt x 42.00198pt.
-
-Overfull \vbox (9.98093pt too high) detected at line 125
- []
-
+ </home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/tspc
+_dff.pdf> </home/cole/Documents/pll/presentations_thesis/latex/presentation5_th
+esis/etspc_dff.pdf>]
+<sync_counter.pdf, id=41, 965.6075pt x 167.62625pt>
+File: sync_counter.pdf Graphic file (type pdf)
+<use sync_counter.pdf>
+Package pdftex.def Info: sync_counter.pdf  used on input line 129.
+(pdftex.def)             Requested size: 335.74263pt x 58.28383pt.
 
 Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [] 
@@ -1857,12 +1862,22 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [4
 
- </home/cole/Documents/pll/presentations/latex/presentation4_thesis/bbpd_noise_
-linearized.pdf>]
-File: bbpd_noise_linearized.pdf Graphic file (type pdf)
-<use bbpd_noise_linearized.pdf>
-Package pdftex.def Info: bbpd_noise_linearized.pdf  used on input line 148.
-(pdftex.def)             Requested size: 184.65947pt x 42.00198pt.
+ </home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/sync
+_counter.pdf>]
+<tspc_counter_power.pdf, id=50, 462.52798pt x 346.89601pt>
+File: tspc_counter_power.pdf Graphic file (type pdf)
+<use tspc_counter_power.pdf>
+Package pdftex.def Info: tspc_counter_power.pdf  used on input line 156.
+(pdftex.def)             Requested size: 167.8713pt x 125.90405pt.
+<etspc_counter_power.pdf, id=51, 462.52798pt x 346.89601pt>
+File: etspc_counter_power.pdf Graphic file (type pdf)
+<use etspc_counter_power.pdf>
+Package pdftex.def Info: etspc_counter_power.pdf  used on input line 156.
+(pdftex.def)             Requested size: 167.8713pt x 125.90405pt.
+
+Overfull \vbox (22.25606pt too high) detected at line 156
+ []
+
 
 Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [] 
@@ -1870,19 +1885,21 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [5
 
-]
-<pll_spectrum_lorentzian.pdf, id=57, 169.63374pt x 120.45pt>
-File: pll_spectrum_lorentzian.pdf Graphic file (type pdf)
-<use pll_spectrum_lorentzian.pdf>
-Package pdftex.def Info: pll_spectrum_lorentzian.pdf  used on input line 181.
-(pdftex.def)             Requested size: 110.79567pt x 78.67017pt.
-<bandwidth_vs_pn.pdf, id=58, 462.52798pt x 346.89601pt>
-File: bandwidth_vs_pn.pdf Graphic file (type pdf)
-<use bandwidth_vs_pn.pdf>
-Package pdftex.def Info: bandwidth_vs_pn.pdf  used on input line 181.
-(pdftex.def)             Requested size: 110.79567pt x 83.09265pt.
+ </home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/tspc
+_counter_power.pdf> </home/cole/Documents/pll/presentations_thesis/latex/presen
+tation5_thesis/etspc_counter_power.pdf
 
-Overfull \vbox (20.2361pt too high) detected at line 181
+pdfTeX warning: pdflatex (file /home/cole/Documents/pll/presentations_thesis/la
+tex/presentation5_thesis/etspc_counter_power.pdf): PDF inclusion: multiple pdfs
+ with page group included in a single page
+>]
+<tspc_sync_counter_power.pdf, id=183, 462.52798pt x 346.89601pt>
+File: tspc_sync_counter_power.pdf Graphic file (type pdf)
+<use tspc_sync_counter_power.pdf>
+Package pdftex.def Info: tspc_sync_counter_power.pdf  used on input line 174.
+(pdftex.def)             Requested size: 167.8713pt x 125.90405pt.
+
+Overfull \vbox (18.25606pt too high) detected at line 174
  []
 
 
@@ -1892,17 +1909,13 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [6
 
- </home/cole/Documents/pll/presentations/latex/presentation4_thesis/pll_spectru
-m_lorentzian.pdf> </home/cole/Documents/pll/presentations/latex/presentation4_t
-hesis/bandwidth_vs_pn.pdf>]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 212.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 212.
-
-Overfull \vbox (5.73795pt too high) detected at line 212
- []
-
+ </home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/tspc
+_sync_counter_power.pdf>]
+<sync_counter_timing.png, id=249, 1913.1475pt x 881.2925pt>
+File: sync_counter_timing.png Graphic file (type png)
+<use sync_counter_timing.png>
+Package pdftex.def Info: sync_counter_timing.png  used on input line 188.
+(pdftex.def)             Requested size: 302.1663pt x 139.19427pt.
 
 Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [] 
@@ -1910,8 +1923,15 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [7
 
-]
-Overfull \vbox (11.06284pt too high) detected at line 238
+ </home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/sync
+_counter_timing.png>]
+<bbpd_jitter.pdf, id=256, 333.245pt x 243.91125pt>
+File: bbpd_jitter.pdf Graphic file (type pdf)
+<use bbpd_jitter.pdf>
+Package pdftex.def Info: bbpd_jitter.pdf  used on input line 204.
+(pdftex.def)             Requested size: 151.08315pt x 110.58156pt.
+
+Overfull \vbox (14.16377pt too high) detected at line 204
  []
 
 
@@ -1921,9 +1941,17 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [8
 
-]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 269.
+ </home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/bbpd
+_jitter.pdf>]
+<cdfs.pdf, id=268, 983.59468pt x 361.35pt>
+File: cdfs.pdf Graphic file (type pdf)
+<use cdfs.pdf>
+Package pdftex.def Info: cdfs.pdf  used on input line 222.
+(pdftex.def)             Requested size: 335.74263pt x 123.34258pt.
+
+Overfull \vbox (21.6606pt too high) detected at line 222
+ []
+
 
 Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [] 
@@ -1931,14 +1959,15 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [9
 
-]
-<tdc_cal.pdf, id=136, 436.63126pt x 164.615pt>
-File: tdc_cal.pdf Graphic file (type pdf)
-<use tdc_cal.pdf>
-Package pdftex.def Info: tdc_cal.pdf  used on input line 290.
-(pdftex.def)             Requested size: 167.8713pt x 63.2878pt.
+ </home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/cdfs
+.pdf>]
+<jitter_pdfs.pdf, id=317, 646.0938pt x 351.23221pt>
+File: jitter_pdfs.pdf Graphic file (type pdf)
+<use jitter_pdfs.pdf>
+Package pdftex.def Info: jitter_pdfs.pdf  used on input line 239.
+(pdftex.def)             Requested size: 235.01881pt x 127.7619pt.
 
-Overfull \vbox (3.97197pt too high) detected at line 290
+Overfull \vbox (12.85715pt too high) detected at line 239
  []
 
 
@@ -1948,38 +1977,24 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [10
 
- </home/cole/Documents/pll/presentations/latex/presentation4_thesis/tdc_cal.pdf
->]
-<etspc_dff_schem.png, id=145, 1633.10126pt x 561.09625pt>
-File: etspc_dff_schem.png Graphic file (type png)
-<use etspc_dff_schem.png>
-Package pdftex.def Info: etspc_dff_schem.png  used on input line 314.
-(pdftex.def)             Requested size: 201.44762pt x 69.2122pt.
-<etspc_dff_symbol.png, id=146, 586.19pt x 473.77pt>
-File: etspc_dff_symbol.png Graphic file (type png)
-<use etspc_dff_symbol.png>
-Package pdftex.def Info: etspc_dff_symbol.png  used on input line 314.
-(pdftex.def)             Requested size: 83.93565pt x 67.83823pt.
-
-Overfull \hbox (33.5763pt too wide) in paragraph at lines 314--314
- []$$[]$ 
- []
-
-
+ </home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/jitt
+er_pdfs.pdf>]
 Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [] 
  []
 
 [11
 
- </home/cole/Documents/pll/presentations/latex/presentation4_thesis/etspc_dff_s
-chem.png> </home/cole/Documents/pll/presentations/latex/presentation4_thesis/et
-spc_dff_symbol.png>]
-<sync_counter.png, id=152, 1495.5875pt x 730.73pt>
-File: sync_counter.png Graphic file (type png)
-<use sync_counter.png>
-Package pdftex.def Info: sync_counter.png  used on input line 329.
-(pdftex.def)             Requested size: 167.8713pt x 82.01959pt.
+]
+<bbpd_noise_linearized.pdf, id=381, 489.83pt x 111.41624pt>
+File: bbpd_noise_linearized.pdf Graphic file (type pdf)
+<use bbpd_noise_linearized.pdf>
+Package pdftex.def Info: bbpd_noise_linearized.pdf  used on input line 293.
+(pdftex.def)             Requested size: 184.65947pt x 42.00198pt.
+
+Overfull \vbox (9.98093pt too high) detected at line 293
+ []
+
 
 Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [] 
@@ -1987,17 +2002,12 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [12
 
- </home/cole/Documents/pll/presentations/latex/presentation4_thesis/sync_counte
-r.png>]
-<count_power.png, id=158, 649.42625pt x 563.10374pt>
-File: count_power.png Graphic file (type png)
-<use count_power.png>
-Package pdftex.def Info: count_power.png  used on input line 346.
-(pdftex.def)             Requested size: 167.8713pt x 145.55289pt.
-
-Overfull \vbox (17.69289pt too high) detected at line 346
- []
-
+ </home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/bbpd
+_noise_linearized.pdf>]
+File: bbpd_noise_linearized.pdf Graphic file (type pdf)
+<use bbpd_noise_linearized.pdf>
+Package pdftex.def Info: bbpd_noise_linearized.pdf  used on input line 316.
+(pdftex.def)             Requested size: 184.65947pt x 42.00198pt.
 
 Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [] 
@@ -2005,15 +2015,19 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [13
 
- </home/cole/Documents/pll/presentations/latex/presentation4_thesis/count_power
-.png>]
-<count_out.png, id=165, 1331.97626pt x 843.15pt>
-File: count_out.png Graphic file (type png)
-<use count_out.png>
-Package pdftex.def Info: count_out.png  used on input line 358.
-(pdftex.def)             Requested size: 268.59512pt x 170.01646pt.
+]
+<pll_spectrum_lorentzian.pdf, id=397, 169.63374pt x 120.45pt>
+File: pll_spectrum_lorentzian.pdf Graphic file (type pdf)
+<use pll_spectrum_lorentzian.pdf>
+Package pdftex.def Info: pll_spectrum_lorentzian.pdf  used on input line 349.
+(pdftex.def)             Requested size: 110.79567pt x 78.67017pt.
+<bandwidth_vs_pn.pdf, id=398, 462.52798pt x 346.89601pt>
+File: bandwidth_vs_pn.pdf Graphic file (type pdf)
+<use bandwidth_vs_pn.pdf>
+Package pdftex.def Info: bandwidth_vs_pn.pdf  used on input line 349.
+(pdftex.def)             Requested size: 110.79567pt x 83.09265pt.
 
-Overfull \vbox (9.66823pt too high) detected at line 358
+Overfull \vbox (20.2361pt too high) detected at line 349
  []
 
 
@@ -2023,20 +2037,10 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [14
 
- </home/cole/Documents/pll/presentations/latex/presentation4_thesis/count_out.p
-ng>]
-<./figs/mc_trans_2x.pdf, id=171, 462.52798pt x 346.89601pt>
-File: ./figs/mc_trans_2x.pdf Graphic file (type pdf)
-<use ./figs/mc_trans_2x.pdf>
-Package pdftex.def Info: ./figs/mc_trans_2x.pdf  used on input line 387.
-(pdftex.def)             Requested size: 167.8713pt x 125.90405pt.
-<figs/mc_hist_fast_2x.pdf, id=172, 462.52798pt x 346.89601pt>
-File: figs/mc_hist_fast_2x.pdf Graphic file (type pdf)
-<use figs/mc_hist_fast_2x.pdf>
-Package pdftex.def Info: figs/mc_hist_fast_2x.pdf  used on input line 387.
-(pdftex.def)             Requested size: 167.8713pt x 125.90405pt.
-
-Overfull \vbox (38.05423pt too high) detected at line 387
+ </home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/pll_
+spectrum_lorentzian.pdf> </home/cole/Documents/pll/presentations_thesis/latex/p
+resentation5_thesis/bandwidth_vs_pn.pdf>]
+Overfull \vbox (5.73795pt too high) detected at line 380
  []
 
 
@@ -2046,23 +2050,10 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [15
 
- <./figs/mc_trans_2x.pdf> </home/cole/Documents/pll/presentations/latex/present
-ation4_thesis/figs/mc_hist_fast_2x.pdf
+]
+Overfull \vbox (11.06284pt too high) detected at line 406
+ []
 
-pdfTeX warning: pdflatex (file /home/cole/Documents/pll/presentations/latex/pre
-sentation4_thesis/figs/mc_hist_fast_2x.pdf): PDF inclusion: multiple pdfs with 
-page group included in a single page
->]
-<cmos_wrap_schem.png, id=292, 1209.51875pt x 586.19pt>
-File: cmos_wrap_schem.png Graphic file (type png)
-<use cmos_wrap_schem.png>
-Package pdftex.def Info: cmos_wrap_schem.png  used on input line 413.
-(pdftex.def)             Requested size: 151.08315pt x 73.2199pt.
-<cmos_wrapper_sym.png, id=293, 777.90625pt x 394.47375pt>
-File: cmos_wrapper_sym.png Graphic file (type png)
-<use cmos_wrapper_sym.png>
-Package pdftex.def Info: cmos_wrapper_sym.png  used on input line 413.
-(pdftex.def)             Requested size: 151.08315pt x 76.61208pt.
 
 Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [] 
@@ -2070,16 +2061,16 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [16
 
- </home/cole/Documents/pll/presentations/latex/presentation4_thesis/cmos_wrap_s
-chem.png> </home/cole/Documents/pll/presentations/latex/presentation4_thesis/cm
-os_wrapper_sym.png>]
-<pll_master_arch.pdf, id=299, 730.73pt x 256.96pt>
+]
+<pll_master_arch.pdf, id=469, 730.73pt x 256.96pt>
 File: pll_master_arch.pdf Graphic file (type pdf)
 <use pll_master_arch.pdf>
-Package pdftex.def Info: pll_master_arch.pdf  used on input line 473.
+Package pdftex.def Info: pll_master_arch.pdf  used on input line 467.
 (pdftex.def)             Requested size: 268.59512pt x 94.45029pt.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 467.
 
-Overfull \vbox (14.67693pt too high) detected at line 473
+Overfull \vbox (14.67693pt too high) detected at line 467
  []
 
 
@@ -2089,8 +2080,8 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 [17
 
- </home/cole/Documents/pll/presentations/latex/presentation4_thesis/pll_master_
-arch.pdf>]
+ </home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/pll_
+master_arch.pdf>]
 Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 [] 
  []
@@ -2127,53 +2118,53 @@ Overfull \hbox (1.66794pt too wide) has occurred while \output is active
 
 ]
 \tf@nav=\write8
-\openout8 = `presentation4_7feb2020.nav'.
+\openout8 = `presentation5_14feb2020.nav'.
 
 \tf@toc=\write9
-\openout9 = `presentation4_7feb2020.toc'.
+\openout9 = `presentation5_14feb2020.toc'.
 
 \tf@snm=\write10
-\openout10 = `presentation4_7feb2020.snm'.
+\openout10 = `presentation5_14feb2020.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 676.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 676.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 670.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 670.
 
-(/home/cole/Documents/pll/presentations/latex/presentation4_thesis/presentation
-4_7feb2020.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 676.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 676.
-Package rerunfilecheck Info: File `presentation4_7feb2020.out' has not changed.
-
+(/home/cole/Documents/pll/presentations_thesis/latex/presentation5_thesis/prese
+ntation5_14feb2020.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 670.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 670.
+Package rerunfilecheck Info: File `presentation5_14feb2020.out' has not changed
+.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package logreq Info: Writing requests to 'presentation4_7feb2020.run.xml'.
-\openout1 = `presentation4_7feb2020.run.xml'.
+Package logreq Info: Writing requests to 'presentation5_14feb2020.run.xml'.
+\openout1 = `presentation5_14feb2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37332 strings out of 492982
- 725335 string characters out of 6134896
- 1134271 words of memory out of 5000000
- 40218 multiletter control sequences out of 15000+600000
- 579956 words of font info for 79 fonts, out of 8000000 for 9000
+ 37328 strings out of 492982
+ 725707 string characters out of 6134896
+ 1134061 words of memory out of 5000000
+ 40221 multiletter control sequences out of 15000+600000
+ 582846 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,16n,66p,10508b,1584s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,16n,66p,10509b,1584s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/helvetic/uhvro8a.pfb>
-Output written on /home/cole/Documents/pll/presentations/latex/presentation4_th
-esis/presentation4_7feb2020.pdf (22 pages, 1172983 bytes).
+/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/helvetic/uhvro8a.pfb>
+Output written on /home/cole/Documents/pll/presentations_thesis/latex/presentat
+ion5_thesis/presentation5_14feb2020.pdf (22 pages, 333405 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 197 compressed objects within 2 object streams
- 51 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 556 PDF objects out of 1000 (max. 8388607)
+ 228 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
